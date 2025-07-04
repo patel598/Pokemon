@@ -60,7 +60,7 @@ export default function Home() {
               <Search className="absolute left-3 top-3 h-5 w-5 text-gray-400" />
               <input
                 type="text"
-                placeholder="Search Pokemon..."
+                placeholder="Search Pokemon name..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
                 className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
@@ -98,9 +98,7 @@ export default function Home() {
 
       {/* Pokemon card section */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-        {filteredPokemon.map((pokemon) => (
-          <PokemonCard key={pokemon.id} pokemon={pokemon} />
-        ))}
+        {filteredPokemon.map(pokemon => <PokemonCard key={pokemon.id} pokemon={pokemon} />)}
       </div>
 
 
