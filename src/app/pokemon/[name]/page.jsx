@@ -82,6 +82,7 @@ export default async function PokemonDetail({ params }) {
                     width={192}
                     height={192}
                     priority
+                    quality={80}
                     className="object-contain"
                   />
                 ) : (
@@ -191,6 +192,7 @@ export default async function PokemonDetail({ params }) {
                           width={96}
                           height={96}
                           priority
+                          quality={80}
                           className="mx-auto mb-2"
                         />
                         <div className="text-sm text-gray-600">Back</div>
@@ -204,6 +206,7 @@ export default async function PokemonDetail({ params }) {
                           width={96}
                           height={96}
                           priority
+                          quality={80}
                           className="mx-auto mb-2"
                         />
                         <div className="text-sm text-gray-600">Shiny</div>

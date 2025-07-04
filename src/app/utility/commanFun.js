@@ -43,3 +43,5 @@ export const filterPokemon = (selectedType, pokemon) => {
   return selectedType ? pokemon.filter(p => p.types.includes(selectedType)) : pokemon
 }
 
+
+

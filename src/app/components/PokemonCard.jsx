@@ -21,6 +21,7 @@ export default function PokemonCard({ pokemon }) {
                   width={96}
                   height={96}
                   priority
+                  quality={80}
                   className="object-contain group-hover:scale-110 transition-transform duration-300"
                 />
               ) : (
